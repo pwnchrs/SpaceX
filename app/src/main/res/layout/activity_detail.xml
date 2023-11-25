@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:id="@+id/txtMissionName"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:id="@+id/txtLaunchDate"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/light_grey"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Rocket Details:"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:id="@+id/txtRocketName"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:id="@+id/txtRocketType"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:id="@+id/txtDescription"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="First Stage"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:id="@+id/txtFirstStage"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Second Stage"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:id="@+id/txtSecondStage"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Launch Details"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:id="@+id/txtStatus"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:id="@+id/txtFailure"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Launch Site"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:id="@+id/txtLaunchSite"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:id="@+id/txtLaunchWindow"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/imgMissionPatch"
+            android:layout_height="200dp">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Mission Patch"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id="@+id/txtHeading"
+            android:text="Mission Description"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:id="@+id/txtMissionDescription"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Links"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:padding="5dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:text="Mission Patch: "
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:text="Click here"
+        android:layout_gravity="center"
+        android:id="@+id/txtMissionPatch"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/link"
+        android:layout_height="wrap_content">
+
+    </TextView>
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:text="Article Link: "
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:text="Click here"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/txtArticleLink"
+                android:gravity="center"
+                android:textColor="@color/link"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="Wikipedia: "
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:text="Click here"
+                android:id="@+id/txtWikipedia"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/link"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="Video Link: "
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:id="@+id/txtVideoLink"
+                android:text="Click here"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/link"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
